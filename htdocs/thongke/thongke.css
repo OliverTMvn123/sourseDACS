@@ -1,0 +1,85 @@
+html{
+
+
+background-image: url("../Background.jpg") ;
+}
+
+#logo
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 3px;
+}
+#logo1{
+    float:left;
+}
+#title1{
+    margin-top:13px;
+    float:left;
+}
+header{
+    border: 3px solid black;
+    text-align: left;
+    background-color: rgb(198, 239, 247);
+    max-width: 100%;
+    min-width:100%;
+    
+}
+#avatar{
+    text-align: right;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 800px;
+    width: 100px;
+    
+}
+
+.clear{
+    clear:both;
+}
+main{
+    border: 3px solid black;
+    background-color: rgb(198, 239, 247,0.5);
+}
+#controll{
+    margin-top: 10px;
+    text-align: center;
+}
+#controll1{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
+#controll1:hover{
+    color: red;
+}
+#table{
+    width: 100%;
+    border:3px solid black;
+    text-align: center;
+    font-size: 15px;
+}
+#table td{
+    border-bottom:3px solid black;
+
+}
+.NVname{
+    width: 10%;
+    border-right:3px solid black;
+
+}
+.vande{
+    width: 13%;
+    border-right:3px solid black;
+
+}
+.thaotac{
+    width: 8%;
+    border-left:3px solid black;
+
+}
+.giatri{
+    display: none;
+}

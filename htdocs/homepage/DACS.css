@@ -1,0 +1,130 @@
+html
+{
+    font-size: 20px;
+    margin: 20px 0 40px 0;
+    background-image: url("../Background.jpg") ;
+    max-width:2000px;
+
+}
+@media all and (max-width: 1920px) {   
+    
+}
+.clear{
+    clear:both;
+}
+header {
+    text-align:center ;
+    border: 2px solid  rgb(11, 11, 11);
+    border-radius: 20px;
+}
+
+#tieude1{
+    color:rgb(251, 7, 7);
+}
+
+#whatisit{
+    text-align: left;
+    border: 2px solid rgb(11, 11, 11);
+    border-radius: 20px ;
+    margin:40px 550px 0px 0;
+    width: 50%;
+    background-color: rgb(221, 212, 212, 0.7);
+}
+#whatisit h1{
+    text-align: center;
+
+}
+#whatisit p{
+    margin:0 0 185px 0
+}
+#logo
+{
+    margin:20px 0
+}
+#controlweb{
+    text-align: left;
+    padding: 0px 320px 0 20px;
+}
+.control1{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+}
+.control1:hover{
+    color:red;
+    font-weight: bold;
+}
+#login{
+    right:40px;
+    margin-top: -30px;
+
+}
+.btn{
+    float:right;
+    background: rgb(21, 21, 21,0.7);
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    
+    
+}
+#resetbtn
+{
+    margin-top: 5px;
+}
+#login #Username,#login a,#login #password{
+    margin-top: 5px;
+
+}
+#login form{
+   
+    margin-left: 5px  ;
+}
+#video1
+{
+    text-align: right;
+    
+   /*
+    right:0px;
+    width: 50%;
+    /*margin: -405px 0px 0px 500px;*/
+    
+    
+}
+#selection1{
+    position: relative;
+
+}
+
+#video1 iframe
+{ 
+    position:absolute;
+    right:0px;
+    border-radius: 20px; 
+    width:48%;
+    height:375px;
+}
+#bantintuan
+{
+    border: 2px solid rgb(11, 11, 11);
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgb(221, 212, 212, 0.7);
+    height: 800px;
+}
+#bantintuan img{
+    float:left;
+    margin-left:10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 30%;
+    height: 20%;
+}
+
+
+.formlogin{
+    float:right;
+    margin-top: 5px;
+}
+.clear{
+    clear:both;
+}

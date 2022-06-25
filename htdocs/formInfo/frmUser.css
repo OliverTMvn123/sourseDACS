@@ -1,0 +1,57 @@
+html{
+    background-image: url("../Background.jpg") ;
+}
+#setting{
+margin-top: 50px;
+position: relative;
+text-align: center;
+margin-left: 37%;
+background-color: rgba(173, 224, 233, 0.4);
+color : rgb(11, 11, 11);
+width: 500px;
+height: 500px;
+}
+#setting #tieude{
+    padding-top: 20px;
+}
+#thongtin{
+    color : rgb(11, 11, 11);
+    text-align: left;
+    font-size:20px;
+}
+#noidungthongtin input{
+    font-size: 20px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color : rgb(11, 11, 11);
+}
+
+#formnoidung{
+    display:flex;
+    text-align: center;
+}
+.infor{
+    margin-top: 60px;
+    margin-left: 20px;
+   width: 35%;
+   height: 50%;
+   
+}
+#logo
+{
+    margin:20px 0
+}
+#tieude1{
+    color:rgb(251, 7, 7);
+}header {
+    text-align:center ;
+    border: 2px solid  rgb(11, 11, 11);
+    border-radius: 20px;
+}
+#backicon{
+    float  :left;
+    width: 60px;
+    height: 60px;
+}

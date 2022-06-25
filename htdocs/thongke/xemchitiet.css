@@ -1,0 +1,83 @@
+html{
+
+
+    background-image: url("../Background.jpg") ;
+    }
+    
+    #logo
+    {
+        width: 100px;
+        height: 100px;
+        margin-top: 3px;
+    }
+    #logo1{
+        float:left;
+    }
+    #title1{
+        margin-top:13px;
+        float:left;
+    }
+    header{
+        border: 3px solid black;
+        text-align: left;
+        background-color: rgb(198, 239, 247);
+        max-width: 100%;
+        min-width:100%;
+        
+    }
+    #avatar{
+        text-align: right;
+        margin: 20px;
+        border: 1px solid black;
+        border-radius: 800px;
+        width: 100px;
+        
+    }
+    
+    .clear{
+        clear:both;
+    }
+    .mucdau{
+        width: 10%;
+        
+    }
+    #selectionMail{
+        width: 100%;
+        background-color: rgba(241, 243, 244, 0.7);
+        
+    }
+    #Select-Mail{
+        border-top: 3px solid black;
+        
+    }
+    #selectionMail td{
+        border-bottom:3px solid black;
+        border-left:3px solid black;
+    }
+    main{
+        border: 3px solid black;
+        text-align: center;
+    }
+    .giatri{
+        display:none;
+    }
+    #loc{
+        text-align: center;
+        width: 50%;
+        height: 30px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    #btn{
+        width: 50px;
+        height: 30px;
+       
+    }
+    #backicon{
+        float: left;
+       
+    }
+    #hinh{
+        width: 50px;
+        height: 50px;
+    }

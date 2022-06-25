@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">   
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HTML/CSS Tutorial</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./mail.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <body>
+        <header>
+            <a href="../homepage/DACS.html"><img id="backicon" src="../formWall/backicon.png" alt=""></a>
+
+            <article id="logo">
+                <img id="logocontroll" src="../homepage/logo.png" width="80">
+            </article>
+            <aside>
+                <h1 id="tieude1">TRUNG TÂM TRẢ LỜI VÀ GIẢI ĐÁP THẮC MẮC</h1>
+                <h2>Nơi giải đáp thắc mắc của bạn</h2>
+            </aside>
+            <style type="text/css">
+                #container{
+                  width: 100%;
+                    position: relative;
+                }
+                #container img{
+                    width: 100%;
+                    height: auto;
+                    
+                  
+                }
+                #container canvas{
+                    position: absolute;
+                    width: 100%;
+                    height: auto;
+                    
+                    top:0;
+                    left:0;
+                }
+            </style>
+        </header>
+        <div id="main">
+            <form action="./reg.php" method="post" enctype="multipart/form-data">
+                <center><h1 style="color: rgb(171, 46, 46)">Thư mới</h1></center>
+                <div class="row">
+                    <div class="receiver">Bạn Muốn Giải Quyết Vấn Đề Về:</div>
+                    <select id="Content" name="nguoinhan">
+                        <option value="Nhà Đất">Nhà Đất</option>
+                        <option value="Tài Sản">Tài Sản</option>
+                        <option value="Thừa Kế">Thừa Kế</option>
+                        <option value="Luật Nhà Nước">Luật Nhà Nước</option>
+                        <option value="Luật Hôn Nhân">Luật Hôn Nhân</option>
+                        <option value="Khiếu Nại">Khiếu Nại</option>
+                        <option value="Khác">Khác</option>
+                        </select>
+                 </div>
+                 <div class="row">
+                    Username :
+                   <input type="text" name="username" id="">
+                </div>
+                <div class="row">
+                    Password :
+                   <input type="password" name="Password" id="">
+                </div>
+                 <div class="row">
+                     Email
+                    <input type="email" name="email" id="">
+                 </div>
+                
+                <div class="row">
+                    <div >Địa chỉ:</div>
+                     <input type="text" name="address" id="address">   
+                </div>
+                <div class="row">
+                    <div >Số Điện Thoại:</div>
+                     <input type="text" name="sdt" id="sdt">   
+                </div>
+                <div class="row">
+                    <div class="theme">Chủ đề:</div>
+                    <div class="theme">
+                       <input type="text" name="Chude">
+                       
+                </div>
+    
+                <div class="row">
+                    <div class="content">Nội dung:</div>
+                    <div class="content">
+                        <textarea style="background-color: aliceblue;" name="noidung" id="" cols="30" rows="10"></textarea>
+                        
+                </div>
+    
+                <div class="attachment-row">
+                    <input type="file" id="input-field" class="input-field"
+                        name="attachment">
+                </div>
+                <div id="container"></div>
+    
+                <div onClick="addMoreAttachment();"
+                    class="icon-add-more-attachemnt"
+                    title="Add More Attachments">
+                </div>
+                
+                <div class="row">
+                    
+                        <button type="submit"  name="send">Gửi</button>
+                      
+                </div>
+                    
+                </div>        
+                <div>
+                    
+                    <div  id="my_camera"></div>
+                    <input type=button value="Take Snapshot" onClick="take_snapshot()">
+                    <div id="results" ></div>
+                    <div id="results1" ></div>
+                    <script type="text/javascript" src="./camera/webcamjs/webcam.min.js"></script>
+                    <script language="JavaScript">
+                        
+                        Webcam.set({
+                            width: 400,
+                            height: 300,
+                            image_format: 'jpeg',
+                            jpeg_quality: 90
+                        });
+                        Webcam.attach('#my_camera');
+
+                    </script>
+                    
+                    <script language="JavaScript">
+                        
+                        function take_snapshot() {	
+                        
+                            Webcam.snap( function(data_uri) {
+                            
+                               document.getElementById('results').innerHTML = 
+                                    '<img id="verification" src="'+data_uri+'"/>';
+                                    
+                                    
+                            } );
+                            
+                             }
+                       
+                        function save(){
+                              var base64image = document.getElementById("verification").src;
+                            Webcam.upload( base64image, './camera/upload.php', function(code, text) {
+                                    console.log('Save successfully');
+                            var a= new Date();
+                            
+                           
+                           var thang=a.getMonth()+1,ngay=a.getDate(),gio=a.getHours(),phut=a.getMinutes(),giay=a.getSeconds();
+                           if(thang<10)
+                           {
+                               thang="0"+thang;
+                           }
+                           if(ngay<10)
+                           {
+                               ngay="0"+ngay;
+                           }
+                           if(gio<10)
+                           {
+                               gio="0"+gio;
+                           }
+                           if(phut<10)
+                           {
+                               phut="0"+ phut;
+                           }
+                           if(giay<10)
+                           {
+                               giay="0"+ giay;
+                           }  
+                           var b="pic_"+a.getFullYear().toString()+thang.toString()+ngay.toString()+gio.toString()+phut.toString()+giay.toString();
+                           
+                            
+                            document.getElementById("results1").innerHTML= '<input class="giatri" type="text" name="verification" value="'+b+'">';    
+                            });
+                            
+                        }
+               
+                        
+                       
+                    </script>
+                            <input type="button" onClick="save()" value="Xác nhận">
+                    </div>
+                    
+                </div>
+    
+            </div>
+
+        </form>
+        
+    </body>
+    <script src="" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.js" 
+                integrity="sha256-JOJ7NmVm2chxYZ1KPcAYd2bwVK7NaFj9QKMp7DClews=" crossorigin="anonymous"></script>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+                <script src="mail.js"></script>
+               
+</html>

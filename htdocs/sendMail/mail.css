@@ -1,0 +1,114 @@
+
+html{
+    background-image: url("../Background.jpg") ;
+}
+
+
+textarea{
+    scrollbar-3dlight-color: aliceblue;
+    scrollbar-shadow-color: silver;
+    scrollbar-arrow-color: black;
+    scrollbar-face-color: gray;
+    width: 90%;
+    background-color: rgb(220, 173, 182);
+}
+.imgHelp{
+    cursor: pointer;
+}
+
+.EmailEditor{
+    background-color: white;
+    border: solid gray;
+}
+
+#main {
+    width: 400px;
+    background-color: rgb(187, 190, 190, 0.5);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 20px #00000010;
+}
+
+#help {
+    position: absolute;
+    width: 500px;
+    height: 420px;
+    top: 10px;
+    background-color: rgba(199, 199, 199, 0.479);
+    padding-left: 10px;
+    padding-right: 10px;
+    /*display: none;*/
+    border: solid #E4E7E7 2px;
+    color: #303030;
+}
+
+.Close {
+    text-align: right;
+    color: #303030;
+    cursor: hand;
+}
+
+.row {
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 1000;
+    color : rgb(95, 3, 90, 0.8);
+}
+
+input {
+    width: 90%;
+}
+
+
+#receiver {
+    width: 100%;
+    padding-right: 10px;
+}
+
+#theme{
+    width: 100%;
+    padding-right: 10px;
+}
+
+#content{
+    width: 100%;
+    padding-right: 10px;
+    font-weight: 500px;
+    font-size: 20px;
+    
+}
+
+.button{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.attachment-row{
+    margin-bottom: 10px;
+}
+#logo
+{
+    margin:20px 0
+}
+#tieude1{
+    color:rgb(251, 7, 7);
+}header {
+    text-align:center ;
+    border: 2px solid  rgb(11, 11, 11);
+    border-radius: 20px;
+}
+#backicon{
+    width: 60px;
+    height: 60px;
+    float: left;
+    }
+#logocontroll{
+    margin-right:50px;
+}
+#Content{
+    width: 92%;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color : rgb(95, 3, 90, 0.8);
+}
